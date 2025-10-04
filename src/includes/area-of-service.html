@@ -1,0 +1,24 @@
+<section class="section" id="zona" aria-labelledby="zona-title">
+  <h2 id="zona-title">Zona de servicio</h2>
+  <p>
+    Operamos principalmente en Juárez, con cobertura en colonias y zonas cercanas.
+    Valida tu ubicación en el mapa o ingresa tu dirección.
+  </p>
+
+  <div class="service-area">
+    <!-- Map placeholder -->
+    <div id="service-map" class="service-map" role="img" aria-label="Mapa de zona de servicio">
+      <div class="map-placeholder">
+        <span>Mapa interactivo próximamente aquí</span>
+      </div>
+    </div>
+
+    <!-- Address check form -->
+    <form class="service-check" id="service-check" aria-label="Validar dirección">
+      <label for="address"><strong>Tu dirección:</strong></label>
+      <input type="text" id="address" name="address" placeholder="Ej. Av. Tecnológico 1234, Juárez">
+      <button type="button" id="check-area" class="btn">Validar cobertura</button>
+      <p id="check-result" class="check-result" aria-live="polite"></p>
+    </form>
+  </div>
+</section>

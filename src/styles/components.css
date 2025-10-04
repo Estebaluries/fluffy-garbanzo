@@ -114,6 +114,13 @@
 
 
 
+
+
+
+
+
+
+
 /* About Us */
 #about {
   background: #f9fafb;
@@ -185,4 +192,59 @@
   margin-top: 1rem;
   font-size: .9rem;
   color: #666;
+}
+
+
+
+
+
+/* Area of Service */
+.service-area {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .service-area {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-map {
+  min-height: 320px;
+  background: #f2f5f7;
+  border: 1px dashed #cfd8dc;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-placeholder span {
+  color: #607d8b;
+  font-size: .95rem;
+}
+
+.service-check input {
+  width: 100%;
+  padding: .5rem .75rem;
+  border: 1px solid #ddd;
+  border-radius: .35rem;
+  margin: .5rem 0;
+}
+
+.check-result {
+  margin-top: .5rem;
+  font-size: .9rem;
+}
+
+.check-result.ok {
+  color: #2e7d32;
+}
+
+.check-result.warning {
+  color: #c62828;
 }
