@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iava — Asistencia personal y entregas en Juárez</title>
+    <link rel="stylesheet" href="/styles/base.css">
+<link rel="stylesheet" href="/styles/layout.css">
+<link rel="stylesheet" href="/styles/tokens.css">
+<link rel="stylesheet" href="/styles/components.css">
+
+<!--note: the order of these stylesheets matters-->
+
+<link rel="stylesheet" href="/styles/utilities.css">
+<link rel="stylesheet" href="/styles/custom.css">
+
 </head>
 <body>
-    
+
+    {% include "nav.html" %}
+    {% include "hero.html" %}
+  {% include "about-us.html" %}
+  {% include "services.html" %}
+  {% include "pricing.html" %}
+  {% include "testimonials.html" %}
+  {% include "how-it-works.html" %}
+  {% include "area-of-service.html" %}
+  {% include "faq.html" %}
+  {% include "footer.html" %}
+
+  <!--Floating whatsAppButton-->
+  <a
+  id="whatsapp-float"
+  class="whatsapp-float"
+  href="https://wa.me/5216560000000?text=Hola%20Iava%2C%20me%20gustaría%20agendar%20un%20servicio."
+  target="_blank"
+  rel="noopener"
+  aria-label="Chatear por WhatsApp"
+>
+  <img src="/assets/icons/whatsapp.svg" alt="" aria-hidden="true">
+</a>
+
+
+<!-- JavaScript files links -->
+<script src="/scripts/menu-toggle.js" defer></script>
+<script src="/scripts/service-area.js" defer></script>
+<script src="/scripts/whatsapp-float.js" defer></script>
+
 </body>
 </html>
