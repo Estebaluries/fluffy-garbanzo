@@ -20,25 +20,21 @@
     {% include "nav.html" %}
     {% include "hero.html" %}
   {% include "about-us.html" %}
-  {% include "services.html" %}
+  {% include "service-cards.html" %}
   {% include "pricing.html" %}
   {% include "testimonials.html" %}
   {% include "how-it-works.html" %}
+  {% include "contac.html" %}
   {% include "area-of-service.html" %}
   {% include "faq.html" %}
   {% include "footer.html" %}
 
   <!--Floating whatsAppButton-->
-  <a
-  id="whatsapp-float"
-  class="whatsapp-float"
-  href="https://wa.me/5216560000000?text=Hola%20Iava%2C%20me%20gustaría%20agendar%20un%20servicio."
-  target="_blank"
-  rel="noopener"
-  aria-label="Chatear por WhatsApp"
->
-  <img src="/assets/icons/whatsapp.svg" alt="" aria-hidden="true">
-</a>
+
+  {% include "components/button-whatsapp-floating.html" %}
+
+  {% include "components/button-whatsapp-floating.html" %}
+ 
 
 
 <!-- JavaScript files links -->
