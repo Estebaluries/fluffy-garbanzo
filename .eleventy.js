@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src",        // main source
       includes: "includes",// templates live here
+      layouts: "includes/layouts", // layouts live here
       data: "data",        // global data folder
       output: "_site"      // build output
     }

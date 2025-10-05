@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,17 +14,37 @@
   <link rel="stylesheet" href="/styles/utilities.css">
   <link rel="stylesheet" href="/styles/custom.css">
 </head>
+
+
+
 <body>
+
+
+
+
+
+
+
+<!--navigation-->
 
   {% include "partials/nav.html" %}
 
+
+
+    <!-- Main content area -->
   <main id="content">
-    {{ content | safe }}
+    {{ content }}
   </main>
 
+
+    <!-- Footer -->
   {% include "partials/footer.html" %}
 
-  <!-- Floating WhatsApp Button -->
+ 
+
+
+  <!--Floating whatsAppButton-->
+
   {% include "components/button-whatsapp-floating.html" %}
 
   <!-- JavaScript -->
@@ -32,3 +53,8 @@
   <script src="/scripts/whatsapp-float.js" defer></script>
 </body>
 </html>
+
+
+
+
+
