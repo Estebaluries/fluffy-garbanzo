@@ -1,3 +1,39 @@
-<footer class="site-footer">
-  <p>&copy; 2025 Iava. Todos los derechos reservados.</p>
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    
+    <!-- Brand -->
+    <div class="footer-brand">
+      <a href="/" class="logo">Iava</a>
+      <p class="tagline">Asistencia personal y entregas en Juárez</p>
+    </div>
+
+    <!-- Quick links -->
+    <nav class="footer-nav" aria-label="Enlaces rápidos">
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#about-us">Sobre nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact info -->
+    <div class="footer-contact">
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/526561234567" target="_blank">+52 656 123 4567</a></p>
+      <p><strong>Email:</strong> <a href="mailto:hola@iava.me">hola@iava.me</a></p>
+      <p><strong>Horario:</strong> Lunes a Sábado, 9:00 am – 7:00 pm</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Iava. Todos los derechos reservados.</p>
+  </div>
 </footer>
+
+<script>
+  // Auto-update year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
