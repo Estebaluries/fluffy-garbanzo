@@ -1,22 +1,15 @@
 {
-  "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
-  },
-
-
-
+  "name": "iava-site",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "start": "eleventy --serve",
-  "build": "eleventy"
+    "clean": "rimraf _site",
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "dev": "npm run clean && npm run serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "rimraf": "^5.0.10"
   }
-
-
-
-
-
-
-
-
-
-
 }

@@ -5,7 +5,8 @@
 
 
 
-/* Reset and base structure */
+/* Reset and base structure */ 
+
 *,
 *::before,
 *::after {
@@ -115,4 +116,4 @@ button,
 
 .hidden {
   display: none !important;
-}
+} 
